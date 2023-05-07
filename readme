@@ -1,0 +1,43 @@
+This app should display student information from student table.
+Each row of student table should contain Actions column.
+Actions column should have three buttons: view, edit, and delete. 
+These buttons perform the various operations on each row data. 
+There should be an add new button and a search button. 
+
+
+steps:
+1. Create functionality to add new student to student table.
+    a. create an add New button, 
+    B. create an add new student modal with an empty content 
+    c. create a student-form.php file. 
+    d. Load the file into the content section of the modal 
+    e. When the Add button on the modal is clicked, 
+        e.1 Validate the form 
+        e.2 Send form data to save-student.php 
+    f. save-student.php should send back a confirmation 
+    g. Based on the confirmation, show either an error toast or success toast. 
+
+2. display a student table
+
+3. add delete functionality
+    a. When delete button is clicked, show an alert button
+    b. decide on the alert to delete or ignore
+
+4. edit functionality
+    a. upload image actions
+        a.1 - retrieve student by Id
+            - get the photo of the student
+            - retreive number of rows that have same photo
+            - if number is one, delete photo from ./img/photo.jpg 
+            - save new photo to ./img/new_photo.jpg        
+
+5. Add authentication, pagination, session management, and 
+    pagination: done
+    authorization: 
+        Create a simple login page
+        Maintain header on all pages
+        create a user table
+            fields: username, password, email, sessionId, gender, role
+        When user is signed in, we should 
+
+
